@@ -7,22 +7,22 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  pool: 5
+  pool: 1
   timeout: 5000
   username: root
   password: 
 
 development:
   <<: *default
-  database: airbrake_developement
+  database: devise_failure_developement
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: airbrake_test
+  database: devise_failure_test
 
 production:
   <<: *default
-  database: airbrake_production
+  database: devise_failure_production

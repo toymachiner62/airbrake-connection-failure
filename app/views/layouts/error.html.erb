@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cremation Society</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+	<%= csrf_meta_tags %>
+    <!-- Styles -->
+    <%= stylesheet_link_tag 'application' %> 
+    <%= stylesheet_link_tag "application-print", :media => "print" %> 
+    
+    
+    <!-- Javascript -->
+    <%= javascript_include_tag 'application' %>
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ 	
+  	
+<div id="header">
+	
+	<div class="container">			
+		
+		<h1><%= link_to "&nbsp;", root_path %></h1>	
+		<p class="subtext">First Memorial Chapels</p>		
+		
+		<div id="info">				
+			
+			<a href="javascript:;" id="info-trigger">
+				<i class="fa fa-cog"></i>
+			</a>
+			
+			<div id="info-menu">
+				
+
+				
+				<!-- <div class="info-avatar">
+					
+					<%= image_tag '/screen/avatar.jpg' %>
+					
+				</div> --> <!-- /.info-avatar -->
+				
+			</div> <!-- /#info-menu -->
+			
+		</div> <!-- /#info -->
+		
+	</div> <!-- /.container -->
+
+</div> <!-- /#header -->
+
+
+<div id="nav">
+		
+	<div class="container">
+		
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="fa fa-reorder"></i>
+      	</a>
+		
+		<div class="nav-collapse">
+			
+		
+			
+		</div> <!-- /.nav-collapse -->
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#nav -->
+
+
+<div id="content">
+		
+	<div class="container">
+		
+		<div class="row">
+		    
+		    <div class="span12">
+						
+				<%= yield %>
+				
+		    </div> <!-- /span12 -->
+		  		    
+		</div> <!-- /row -->
+		
+		
+	</div> <!-- /.container -->
+	
+</div> <!-- /#content -->
+
+
+
+<div id="footer">	
+		
+	<div class="container">
+		Developed by <a href="http://www.10foldsolutions.com">10fold Solutions</a>
+		<!-- <a href="http://jumpstartuidemo.com/themes/slate/">Original Theme Preview</a> -->
+		&copy; <%= Time.now.year %> csmschedule.com, all rights reserved.
+		
+	</div> <!-- /.container -->		
+	
+</div> <!-- /#footer -->
+
+
+
+
+
+  </body>
+</html>

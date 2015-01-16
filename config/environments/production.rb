@@ -79,4 +79,7 @@ Rails.application.configure do
   
   # Devise needs this
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  # This allows us to use our own custom error pages
+    config.exceptions_app = self.routes
 end

@@ -7,11 +7,7 @@ class ApplicationController < ActionController::Base
   
   def get_current_user
     #raise exception "asdf"
-    unless current_user.nil?
-      
-      if current_user.email == "jeff@gmail.com"
-        raise "error for jeff@gmail.com"
-      end
+    if user_signed_in?
       puts "current_user = #{current_user}"
     end
   end

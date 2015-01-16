@@ -58,4 +58,9 @@ Rails.application.routes.draw do
   #   end
   
   root to: "homes#index"
+  
+  get '/403', :to => 'errors#render_403'
+  get '/404', :to => 'errors#render_404'
+  get '/422', :to => 'errors#render_422'
+  get '/500', :to => 'errors#render_500'
 end
